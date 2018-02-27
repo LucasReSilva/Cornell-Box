@@ -1,6 +1,8 @@
 # Cornell-Box
 
-![Cornell Box](Cornell_Box_Original.jpg)
+![Cornell Box](https://github.com/LucasReSilva/Cornell-Box/raw/master/Cornell_Box_original.jpg "Cornell Box")
+
+[http://www.graphics.cornell.edu/online/box/data.html](http://www.graphics.cornell.edu/online/box/data.html)
 
 **Several Cornell Box files**
 
