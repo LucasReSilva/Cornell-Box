@@ -1,0 +1,87 @@
+# Geometry File
+
+AttributeBegin #  "Light"
+
+Transform [-0.001000000047497 0.000000000087423 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000043711 0.001000000047497 0.000000000000000 0.000000000087423 0.001000000047497 -0.000000000043711 0.000000000000000 -0.278000026941299 0.279500007629395 0.547800004482269 1.000000000000000]
+
+NamedMaterial "Emitter"
+
+AreaLightSource "area"
+	"color L" [1.00000000 1.00000000 1.00000000]
+	"float gain" [100.000000000000000]
+	"float power" [100.000000000000000]
+	"float efficacy" [17.000000000000000]
+	"float importance" [1.000000000000000]
+	"integer nsamples" [1]
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/Light_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["Light"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "large_box"
+
+Transform [-0.048886373639107 0.157591655850410 -0.000000028849517 0.000000000000000 -0.000000003318031 0.000000059382177 0.330000013113022 0.000000000000000 0.157591655850410 0.048886373639107 -0.000000007212379 0.000000000000000 -0.368000060319901 0.351000010967255 0.165000036358833 1.000000000000000]
+
+NamedMaterial "box_Material"
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/large_box_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["large_box"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "small_box"
+
+Transform [-0.079055033624172 0.023591386154294 0.000000003093635 0.000000000000000 0.000000001183353 -0.000000006853133 0.082500010728836 0.000000000000000 0.023591386154294 0.079055033624172 0.000000006228578 0.000000000000000 -0.185000017285347 0.169000014662743 0.082500018179417 1.000000000000000]
+
+NamedMaterial "box_Material"
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/small_box_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["small_box"]
+
+AttributeEnd # ""
+
+AttributeBegin #  "cornell_box"
+
+Transform [-0.001000000047497 -0.000000000150996 0.000000000000000 0.000000000000000 0.000000000000000 -0.000000000075498 0.001000000047497 0.000000000000000 -0.000000000150996 0.001000000047497 0.000000000075498 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000]
+
+AttributeBegin #  ""
+
+NamedMaterial "cbox_Material"
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/cornell_box_0000_m000.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cornell_box"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "cbox_red"
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/cornell_box_0000_m001.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cornell_box"]
+
+AttributeEnd # ""
+
+AttributeBegin #  ""
+
+NamedMaterial "cbox_green"
+
+Shape "plymesh"
+	"string filename" ["LuxRender/Scene/00001/cornell_box_0000_m002.ply"]
+	"bool generatetangents" ["false"]
+	"string name" ["cornell_box"]
+
+AttributeEnd # ""
+
+AttributeEnd # ""

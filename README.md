@@ -11,3 +11,5 @@ Cycles.blend modified from [https://developer.blender.org/F156817](https://devel
 Cycles_denoiser.blend modified from [https://github.com/wahn/export_multi/tree/master/00_cornell_box/blend](https://github.com/wahn/export_multi/tree/master/00_cornell_box/blend)
 
 LuxRender.blend created from Cycles.blend
+
+CornellBox_by_wahn.pbrt modified from [https://www.janwalter.org/download/](https://www.janwalter.org/download/)

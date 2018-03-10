@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- # Main Scene File -->
+<scene version="0.5.0">
+	<integrator name="integrator" type="path">
+		<boolean name="strictNormals" value="false"/>
+		<boolean name="hideEmitters" value="false"/>
+		<integer name="rrDepth" value="10"/>
+		<integer name="maxDepth" value="64"/>
+	</integrator>
+	<sensor type="perspective" id="Camera-camera">
+		<film name="film" type="ldrfilm">
+			<boolean name="banner" value="false"/>
+			<boolean name="highQualityEdges" value="false"/>
+			<string name="pixelFormat" value="rgb"/>
+			<boolean name="fitHorizontal" value="false"/>
+			<integer name="width" value="500"/>
+			<float name="gamma" value="-1.000000"/>
+			<float name="pixelAspectX" value="1.000000"/>
+			<integer name="height" value="500"/>
+			<float name="shiftY" value="0.000000"/>
+			<float name="exposure" value="0.000000"/>
+			<rfilter name="rfilter" type="gaussian">
+				<float name="stddev" value="0.500000"/>
+			</rfilter>
+			<float name="pixelAspectY" value="1.000000"/>
+			<float name="shiftX" value="0.000000"/>
+			<string name="fileFormat" value="png"/>
+			<string name="tonemapMethod" value="gamma"/>
+		</film>
+		<transform name="toWorld">
+			<lookat target="-0.278000, 0.273000, 0.799000" origin="-0.278000, 0.273000, 0.800000" up="-0.000000, 0.001000, -0.000000"/>
+		</transform>
+		<float name="farClip" value="1500.000000"/>
+		<float name="fov" value="39.146252"/>
+		<string name="fovAxis" value="y"/>
+		<float name="nearClip" value="0.100000"/>
+		<sampler name="sampler" type="sobol">
+			<integer name="scramble" value="0"/>
+			<integer name="sampleCount" value="512"/>
+		</sampler>
+	</sensor>
+	<shape type="serialized" id="Light_Light_0000_m000_0.000000">
+		<emitter name="emitter" type="area">
+			<float name="samplingWeight" value="1.000000"/>
+			<rgb name="radiance" value="100.000000 100.000000 100.000000"/>
+		</emitter>
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/Light_0000_m000_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.001000 0.000000 0.000000 -0.278000 0.000000 0.001000 -0.000000 0.547800 -0.000000 -0.000000 -0.001000 -0.279500 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+	</shape>
+	<bsdf type="diffuse" id="cbox_Material-mts_ntree-bsdf">
+		<rgb name="reflectance" value="0.400000 0.400000 0.400000"/>
+	</bsdf>
+	<shape type="serialized" id="cornell_box_cornell_box_0000_m000_0.000000">
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/cornell_box_0000_m000_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.001000 0.000000 -0.000000 0.000000 0.000000 0.001000 0.000000 0.000000 0.000000 0.000000 -0.001000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="cbox_Material-mts_ntree-bsdf"/>
+	</shape>
+	<bsdf type="diffuse" id="cbox_red-mts_ntree-bsdf">
+		<rgb name="reflectance" value="0.500000 0.000000 0.000000"/>
+	</bsdf>
+	<shape type="serialized" id="cornell_box_cornell_box_0000_m001_0.000000">
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/cornell_box_0000_m001_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.001000 0.000000 -0.000000 0.000000 0.000000 0.001000 0.000000 0.000000 0.000000 0.000000 -0.001000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="cbox_red-mts_ntree-bsdf"/>
+	</shape>
+	<bsdf type="diffuse" id="cbox_green-mts_ntree-bsdf">
+		<rgb name="reflectance" value="0.000000 0.500000 0.000000"/>
+	</bsdf>
+	<shape type="serialized" id="cornell_box_cornell_box_0000_m002_0.000000">
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/cornell_box_0000_m002_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.001000 0.000000 -0.000000 0.000000 0.000000 0.001000 0.000000 0.000000 0.000000 0.000000 -0.001000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="cbox_green-mts_ntree-bsdf"/>
+	</shape>
+	<bsdf type="diffuse" id="box_Material-mts_ntree-bsdf">
+		<rgb name="reflectance" value="0.500000 0.500000 0.500000"/>
+	</bsdf>
+	<shape type="serialized" id="small_box_small_box_0000_m000_0.000000">
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/small_box_0000_m000_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.079055 0.000000 0.023591 -0.185000 0.000000 0.082500 0.000000 0.082500 -0.023591 0.000000 -0.079055 -0.169000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="box_Material-mts_ntree-bsdf"/>
+	</shape>
+	<shape type="serialized" id="large_box_large_box_0000_m000_0.000000">
+		<string name="filename" value="D:/Users/lucas/Desktop/Cornell-Box/Mitsuba/Mitsuba/Scene/00001/large_box_0000_m000_0_000000.serialized"/>
+		<transform name="toWorld">
+			<matrix value="-0.048886 -0.000000 0.157592 -0.368000 -0.000000 0.330000 -0.000000 0.165000 -0.157592 -0.000000 -0.048886 -0.351000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="box_Material-mts_ntree-bsdf"/>
+	</shape>
+</scene>

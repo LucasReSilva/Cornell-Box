@@ -1,0 +1,26 @@
+# Materials File
+
+MakeNamedMaterial "Emitter"
+	"color Kd" [0.60000002 0.60000002 0.60000002]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "box_Material"
+	"color Kd" [0.50000000 0.50000000 0.50000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "cbox_Material"
+	"color Kd" [0.40000001 0.40000001 0.40000001]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "cbox_red"
+	"color Kd" [0.50000000 0.00000000 0.00000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
+
+MakeNamedMaterial "cbox_green"
+	"color Kd" [0.00000000 0.50000000 0.00000000]
+	"float sigma" [0.000000000000000]
+	"string type" ["matte"]
