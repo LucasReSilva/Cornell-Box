@@ -1,0 +1,34 @@
+# Main Scene File
+Scale -1 1 1
+
+Accelerator "bvh"
+
+Sampler "sobol"
+	"integer pixelsamples" [64]
+
+Integrator "path"
+	"integer maxdepth" [16]
+
+PixelFilter "box"
+	"float xwidth" [0.500000000000000]
+	"float ywidth" [0.500000000000000]
+
+LookAt -0.278000 -0.800000 0.273000 -0.278000 -0.799000 0.273000 -0.000000 0.000000 0.001000
+
+Camera "perspective"
+	"float fov" [39.146252510876771]
+	"float screenwindow" [-1.000000000000000 1.000000000000000 -1.000000000000000 1.000000000000000]
+	"float shutteropen" [0.000000000000000]
+	"float shutterclose" [0.041666666666667]
+
+Film "image"
+	"integer xresolution" [500]
+	"integer yresolution" [500]
+	"string filename" ["CornellBox_pbrtBlend.Scene.00001.png"]
+
+WorldBegin
+
+Include "CornellBox_pbrtBlend/Scene/00001/PBRTv3-Materials.PBRTv3m"
+
+Include "CornellBox_pbrtBlend/Scene/00001/PBRTv3-Geometry.PBRTv3g"
+WorldEnd
